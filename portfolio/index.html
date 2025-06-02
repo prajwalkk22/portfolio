@@ -1,64 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-
-        <nav class="navbar">
-            <a href="#" style="--i:1" class="active">Home</a>
-            <a href="#about" style="--i:2">About</a>
-            <a href="#" style="--i:3">Skill</a>
-            <a href="#" style="--i:4">Portfolio</a>
-            <a href="#" style="--i:5">Contact</a>
-
-        </nav>
+      <a href="#" class="logo">Portfolio</a>
+      <nav class="navbar">
+        <a href="#home" style="--i: 1" class="active">Home</a>
+        <a href="#about" style="--i: 2">About</a>
+        <a href="#education" style="--i: 2">Education</a>
+        <a href="#skills" style="--i: 3">Skill</a>
+        <a href="#portfolio" style="--i: 4">Portfolio</a>
+        <a href="#contact" style="--i: 5">Contact</a>
+        <a href="#blog">Blog</a>
+      </nav>
     </header>
-    <section class="home">
-        <div class="home-content">
-            <h1>Hello,It's Me</h1>
-            <h1>Prajwal K K</h1>
-            <h3>And I'm a <span class="text"></span></h3>
-            <p>I am a beginner Backend Developer passionate about building scalable server-side applications. Currently, I am exploring DevOps practices with a focus on AWS and cloud infrastructure. Eager to learn and grow, I’m committed to building efficient and reliable backend systems.</p>
-            <!-- <img class="profile"src="/portfolio/profile.jpeg" width="300px"> -->
-            <div class="home-sci">
-                <a href="#" style="--i:7"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" style="--i:8"><i class='bx bxl-github'></i></a>
-                <a href="#" style="--i:9"><i class='bx bxl-linkedin'></i></a>
-                <a href="#" style="--i:10"><i class='bx bx-code-block'></i></a>
-            </div>
-            <a href="#" class="btn-box">More About Me</a>
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hello,It's Me</h1>
+        <h1>Prajwal K K</h1>
+        <h3>And I'm a <span class="text"></span></h3>
+        <p>
+          I am a beginner Backend Developer passionate about building scalable
+          server-side applications. Currently, I am exploring DevOps practices
+          with a focus on AWS and cloud infrastructure. Eager to learn and grow,
+          I'm committed to building efficient and reliable backend systems.
+        </p>
+        <div class="home-sci">
+          <a href="#" style="--i: 7"><i class="bx bxl-instagram"></i></a>
+          <a href="#" style="--i: 8"><i class="bx bxl-github"></i></a>
+          <a href="#" style="--i: 9"><i class="bx bxl-linkedin"></i></a>
+          <a href="#" style="--i: 10"><i class="bx bx-code-block"></i></a>
         </div>
-        <span class="home-imgHover"></span>
+        <a href="#" class="btn-box">More About Me</a>
+      </div>
+
+      <div class="home-image">
+        <div class="image-frame"></div>
+        <img src="profile.jpeg" alt="Prajwal K K" />
+      </div>
+
+      <span class="home-imgHover"></span>
     </section>
 
     <section class="about" id="about">
-            <div class="about-img">
-                <img src="/portfolio/profile.jpeg">
-            </div>
-            <div class="about-text">
-                <h2>About<span>Me</span> </h2>
-                <h4>MERN stack developer</h4> 
-                <p>
-                    I am a Computer Science engineering student with 1 year of experience in coding and software development. My primary focus is on backend development, where I'm learning to build efficient and scalable server-side applications. I also create frontend interfaces using Bubble, a no-code AI-powered platform that allows me to design user-friendly UIs quickly.
+      <div class="about-img">
+        <img src="./profile.jpeg" />
+      </div>
+      <div class="about-text">
+        <h2>About<span>Me</span></h2>
+        <h4>MERN stack developer</h4>
+        <p>
+          I am a Computer Science engineering student with 1 year of experience
+          in coding and software development. My primary focus is on backend
+          development, where I'm learning to build efficient and scalable
+          server-side applications. I also create frontend interfaces using
+          Bubble, a no-code AI-powered platform that allows me to design
+          user-friendly UIs quickly. Currently, I’m expanding my skills in
+          DevOps, exploring tools and practices that help streamline the
+          development and deployment process. I’m particularly interested in
+          cloud technologies like AWS and understanding how modern
+          infrastructure works. I enjoy learning by building projects and
+          solving real-world problems through code. With every step, I aim to
+          become a well-rounded developer who can contribute to both development
+          and deployment phases of software.
 
-Currently, I’m expanding my skills in DevOps, exploring tools and practices that help streamline the development and deployment process. I’m particularly interested in cloud technologies like AWS and understanding how modern infrastructure works.
-
-I enjoy learning by building projects and solving real-world problems through code. With every step, I aim to become a well-rounded developer who can contribute to both development and deployment phases of software.
-
-<a href="#" class="btn-box">More About Me</a>
-                </p>
-            </div>
+          <a href="#" class="btn-box">More About Me</a>
+        </p>
+      </div>
     </section>
 
+    <!-- Education Section -->
+    <!-- Education Section -->
+    <section class="education" id="education">
+      <h2 class="section-title">My <span>Education</span></h2>
+
+      <div class="education-container">
+        <!-- Degree 1 -->
+        <div class="education-box">
+          <div class="education-content">
+            <div class="education-header">
+              <h3>Bachelor of Engineering in Computer Science</h3>
+              <span class="education-date">2023 - 2027</span>
+            </div>
+            <h4>Sahyadri College of Engineering and Management</h4>
+            <p>
+              Relevant coursework: Data Structures, Algorithms, Database
+              Systems, Operating Systems, Computer Networks
+            </p>
+            <p>CGPA: 9.01/10.0</p>
+          </div>
+        </div>
+
+        <!-- Degree 2 -->
+        <div class="education-box">
+          <div class="education-content">
+            <div class="education-header">
+              <h3>Pre-University College (PUC)</h3>
+              <span class="education-date">2021 - 2023</span>
+            </div>
+            <h4>Vivekananda PU College, Puttur</h4>
+            <p>Major: Science (PCMB)</p>
+            <p>Percentage: 94.78%</p>
+          </div>
+        </div>
+
+        <!-- School -->
+        <div class="education-box">
+          <div class="education-content">
+            <div class="education-header">
+              <h3>Secondary School</h3>
+              <span class="education-date">2019</span>
+            </div>
+            <h4>Saverapura English Medium School, Kallugundi</h4>
+            <p>Percentage: 97.75%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill Section -->
+
+    <section class="skills" id="skills">
+      <h2 class="section-title">SKILLS</h2>
+
+      <div class="skills-category">
+        <h3>Front-end</h3>
+        <div class="skills-tags">
+          <div class="skill-tag">JavaScript</div>
+          <div class="skill-tag">React</div>
+          <div class="skill-tag">Redux</div>
+          <div class="skill-tag">HTML5</div>
+          <div class="skill-tag">CSS3</div>
+          <div class="skill-tag">Sass</div>
+          <div class="skill-tag">Bootstrap</div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Back-end</h3>
+        <div class="skills-tags">
+          <div class="skill-tag">Node.js</div>
+          <div class="skill-tag">MongoDB</div>
+          <div class="skill-tag">Python</div>
+          <div class="skill-tag">Firebase</div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Other</h3>
+        <div class="skills-tags">
+          <div class="skill-tag">Git</div>
+          <div class="skill-tag">Linux</div>
+          <div class="skill-tag">Jest</div>
+          <div class="skill-tag">Adobe XD</div>
+          <div class="skill-tag">Photoshop</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <!-- Certificates Section -->
+    <!-- Certificates Section -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="section-title">My <span>Certificates</span></h2>
+
+      <div class="certificates-container">
+        <!-- Certificate 1 -->
+        <div class="certificate-box">
+          <div class="certificate-img">
+            <img
+              src="./images/certificate1.jpeg"
+              alt="Foundation of Java Certificate"
+            />
+          </div>
+          <div class="certificate-content">
+            <h3>Foundation of Java</h3>
+            <p>Issued by Infosys Springboard</p>
+            <p>Date: Month 2023</p>
+            <a href="#" class="btn-box">View Certificate</a>
+          </div>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="certificate-box">
+          <div class="certificate-img">
+            <img src="./images/certificate2.jpeg" alt="Linux Certificate" />
+          </div>
+          <div class="certificate-content">
+            <h3>Linux Certificate</h3>
+            <p>Issued by Infosys Springboard</p>
+            <p>Date: Month 2023</p>
+            <a href="#" class="btn-box">View Certificate</a>
+          </div>
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="certificate-box">
+          <div class="certificate-img">
+            <img
+              src="./images/certificate3.jpeg"
+              alt="Vanilla JS Certificate"
+            />
+          </div>
+          <div class="certificate-content">
+            <h3>Vanilla JavaScript</h3>
+            <p>Issued by Coursera</p>
+            <p>Date: Month 2022</p>
+            <a href="#" class="btn-box">View Certificate</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <h2 class="section-title">My <span>Projects</span></h2>
+
+      <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-box">
+          <div class="project-img">
+            <img
+              src="./Screenshot from 2025-05-25 16-48-41.png"
+              alt="Project 1 Screenshot"
+            />
+          </div>
+          <div class="project-content">
+            <h3>Task Manager</h3>
+            <p>
+              It is a task manger with the timer to complete the task and many
+              more features
+            </p>
+            <a
+              href="https://github.com/yourusername/project1"
+              target="_blank"
+              class="btn-box"
+              >GitHub</a
+            >
+            <a
+              href="https://liveprojectlink1.com"
+              target="_blank"
+              class="btn-box"
+              >View Live</a
+            >
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-box">
+          <div class="project-img">
+            <img
+              src="./WhatsApp Image 2025-05-25 at 4.39.37 PM.jpeg"
+              alt="Project 2 Screenshot"
+            />
+          </div>
+          <div class="project-content">
+            <h3>Expense Tracker</h3>
+            <p>
+              It is a simple Expense tracker consisting both the income and
+              expense and shows the current balance
+            </p>
+            <a
+              href="https://github.com/yourusername/project2"
+              target="_blank"
+              class="btn-box"
+              >GitHub</a
+            >
+            <a
+              href="https://liveprojectlink2.com"
+              target="_blank"
+              class="btn-box"
+              >View Live</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-form">
+        <form action="#" method="post">
+          <div class="form-group">
+            <label>First Name <span>*</span></label>
+            <input type="text" name="first-name" required />
+          </div>
+          <div class="form-group">
+            <label>Last Name <span>*</span></label>
+            <input type="text" name="last-name" required />
+          </div>
+          <div class="form-group">
+            <label>Email Address <span>*</span></label>
+            <input type="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label>Comments / Questions <span>*</span></label>
+            <textarea name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="send-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
 
     <script src="script.js"></script>
-</body>
+    <!-- Modal for Certificate Display -->
+    <div id="certificateModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div id="caption"></div>
+    </div>
+  </body>
 </html>
